@@ -1,0 +1,7 @@
+syntax = "proto3";
+import "request.proto";
+import "reply.proto";
+import "tx.proto";
+import "block.proto";
+import "blockHeader.proto";
+import "state.proto";

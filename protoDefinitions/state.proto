@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+message DBState {
+    oneof state {
+        Account account = 1;
+        StateNode node = 2;
+        int32 refCount = 3;
+    }
+}
+
+message Account {
+    int64 balance = 1;
+    int32 nonce = 2;
+}
+
+//TODO: Switch to map<bytes, bytes> (Broken in protobuf.js?)
+message StateNode {
+    repeated NodeRef nodeRefs = 1;
+}
+
+message NodeRef {
+    bytes address = 1; //Address
+    bytes child = 2; //Hash
+}

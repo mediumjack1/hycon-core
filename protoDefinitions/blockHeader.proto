@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+message BlockHeader {
+    bytes previousHash = 1; //Hash
+    bytes merkleRoot = 2; //Hash
+    bytes stateRoot = 3; //Hash
+    int32 difficulty = 4;
+    int64 timeStamp = 5; 
+    int64 nonce = 6;
+}
+
+message BlockHeaders {
+  repeated BlockHeader blockHeaders = 1;
+  int32 maxHeight = 2;
+}

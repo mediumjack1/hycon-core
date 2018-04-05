@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message PeerRequest {
+  //If this parameter is present the requesting peer will be added with this port to the peer list
+  int32 port = 1;
+}

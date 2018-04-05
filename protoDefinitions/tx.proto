@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "address.proto";
+import "hash.proto";
+message Txs {
+  repeated Tx txs =1;
+}
+
+message Tx {
+  bytes from = 1; //Address
+  bytes to = 2; //Address
+  int64 amount = 3;
+  int64 fee = 4;
+  int32 nonce = 5;
+  bytes signature = 6;
+  int32 recovery = 7;
+}
+
+message TxDB {
+  bytes hash = 1;
+  bytes blockHash = 2;
+  int32 blockHeight = 3;
+  int32 txNumber = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+import "block.proto";
+
+message Peer {
+  string host = 1;
+  int32 port = 2;
+  string name = 3 ; 
+  string location = 4 ;
+  bool isMiner = 5;
+  string ip = 6 ;
+  int32 nodes = 7;
+  Block lastBlock = 8;
+  int32 pendingTransaction = 9 ;
+  int32 nodeLatency = 10 ;
+  int32 peersNumber = 11 ;
+}

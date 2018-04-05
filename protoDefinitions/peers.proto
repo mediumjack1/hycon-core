@@ -1,0 +1,6 @@
+syntax = "proto3";
+import "peer.proto";
+
+message Peers {
+  repeated Peer peers = 1;
+}
