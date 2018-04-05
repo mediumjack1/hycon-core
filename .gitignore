@@ -1,0 +1,14 @@
+node_modules/
+npm-debug.log*
+data/
+*.pri
+*.pub
+index.ts
+dist
+coverage
+.vscode
+.DS_Store
+peerList.txt
+log/
+*.swp
+*.dat
