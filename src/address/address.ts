@@ -1,4 +1,4 @@
-const Base58 = require('base-58')
+import * as Base58 from 'base-58'
 import * as proto from '../serialization/proto'
 import { Hash } from '../utils/hash'
 
@@ -25,7 +25,7 @@ function toUint8Array(address: (string | Uint8Array)) {
 
 export class Address extends Uint8Array {
     constructor(address: string | Uint8Array | number) {
-        typeof address == 'number' ? super(address) : super(toUint8Array(address)) //Typescript bug: Can not determine which constructor
+        typeof address == 'number' ? super(address) : super(toUint8Array(address)) // Need to allow for super constructor for number due to extension of Uint8Array
     }
 
     public toString(): string {
@@ -35,7 +35,6 @@ export class Address extends Uint8Array {
             str += checkSum(this)
             str = 'H' + str
         } catch (err) {
-            // istanbul ignore next
             console.log(err)
         }
 
