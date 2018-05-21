@@ -1,4 +1,4 @@
-[
+export const english = [
   "abandon",
   "ability",
   "able",
@@ -2046,5 +2046,5 @@
   "zebra",
   "zero",
   "zone",
-  "zoo"
+  "zoo",
 ]

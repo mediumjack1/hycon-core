@@ -1,4 +1,4 @@
-[
+export const italian = [
   "abaco",
   "abbaglio",
   "abbinato",
@@ -2046,5 +2046,5 @@
   "zucchero",
   "zufolo",
   "zulu",
-  "zuppa"
+  "zuppa",
 ]

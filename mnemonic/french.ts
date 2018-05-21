@@ -1,4 +1,4 @@
-[
+export const french = [
   "abaisser",
   "abandon",
   "abdiquer",
@@ -2046,5 +2046,5 @@
   "zèbre",
   "zénith",
   "zeste",
-  "zoologie"
+  "zoologie",
 ]

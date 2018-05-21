@@ -1,4 +1,4 @@
-[
+export const spanish = [
   "ábaco",
   "abdomen",
   "abeja",
@@ -2046,5 +2046,5 @@
   "zona",
   "zorro",
   "zumo",
-  "zurdo"
+  "zurdo",
 ]
