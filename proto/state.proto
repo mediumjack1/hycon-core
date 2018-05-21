@@ -9,11 +9,10 @@ message DBState {
 }
 
 message Account {
-    int64 balance = 1;
+    uint64 balance = 1;
     int32 nonce = 2;
 }
 
-//TODO: Switch to map<bytes, bytes> (Broken in protobuf.js?)
 message StateNode {
     repeated NodeRef nodeRefs = 1;
 }

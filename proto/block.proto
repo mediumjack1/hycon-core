@@ -1,6 +1,7 @@
 syntax = "proto3";
 import "tx.proto";
 import "blockHeader.proto";
+import "difficulty.proto";
 
 message Block {
     BlockHeader header = 1;
@@ -10,8 +11,10 @@ message Block {
 
 message BlockDB {
     int32 height = 1;
-    int32 fileNumber = 2;
-    int32 offset = 3;
-    BlockHeader header = 4;
+    BlockHeader header = 2;
+    int32 fileNumber = 3;
+    int32 offset = 4;
     int32 length = 5;
+    int32 timeEMA = 6;
+    int32 workEMA = 7;
 }

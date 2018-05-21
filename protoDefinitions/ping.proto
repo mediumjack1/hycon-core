@@ -1,5 +1,0 @@
-syntax = "proto3";
-
-message Ping {
-  int32 nonce = 1;
-}

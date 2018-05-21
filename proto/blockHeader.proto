@@ -2,7 +2,7 @@ syntax = "proto3";
 
 
 message BlockHeader {
-    bytes previousHash = 1; //Hash
+    repeated bytes previousHash = 1; //Hashes
     bytes merkleRoot = 2; //Hash
     bytes stateRoot = 3; //Hash
     int32 difficulty = 4;

@@ -1,0 +1,10 @@
+syntax = "proto3";
+import "block.proto";
+
+message Peer {
+  string host = 1;
+  int32 port = 2;
+  int64 lastSeen = 3;
+  int32 failCount = 4;
+  int64 lastAttempt = 5;
+}

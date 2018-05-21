@@ -1,7 +1,6 @@
 syntax = "proto3";
-import "request.proto";
-import "reply.proto";
-import "tx.proto";
+import "network.proto";
 import "block.proto";
 import "blockHeader.proto";
+import "tx.proto";
 import "state.proto";
