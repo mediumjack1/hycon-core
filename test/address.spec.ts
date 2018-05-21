@@ -1,6 +1,6 @@
 import * as Base58 from 'base-58'
 import { } from 'jasmine'
-import { Address } from '../src/address/address'
+import { Address } from '../src/common/address'
 
 describe('Address', () => {
     let address: Address
